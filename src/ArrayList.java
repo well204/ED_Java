@@ -9,13 +9,22 @@ public class ArrayList<T> {
         this.size = 0;
     }
 
-    public int findLastOcurreence (T element) { // encontra a ultima ocorrencia de um elemento T
+    public int findLastOcurrence (T element) { // encontra a ultima ocorrencia de um elemento T, retoena -1 se nao encontrar
         int index = -1;
         for (int i = 0; i < this.size; i++) {
             if (this.vector[i] == element)
                 index = i;
         }
         return index;
+    }
+
+    public int numberOfOcurrence(T element) {
+        int ocurrence = 0;
+        for (int i = 0; i < this.size; i++) {
+            if (this.vector[i] == element)
+                ocurrence++;
+        }
+        return ocurrence;
     }
     
     protected void ensureCapacity(int minCapacity) { // garantir capacidade do vetor, aumenta com um valor passado pelo teclado
@@ -37,7 +46,7 @@ public class ArrayList<T> {
         this.capacity = newCapacity;
     }
  
-    //FIXME: Versao que recebe nao parametro
+    //FIXME: Versao que nao recebe parametro
     protected void increaseCapacity() { // aumentar capacidade
         if (this.capacity == 0) {
             this.vector = new Object[2];

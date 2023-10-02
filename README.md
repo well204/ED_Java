@@ -16,6 +16,10 @@ Esta é uma implementação simples de uma classe `ArrayList` em Java, criada do
 
 - **`showArray()`:** Exibe todos os elementos presentes no `ArrayList`.
 
+- **`findLastOcurrence(T element)`:** Retorna o índice da última ocorrência do elemento no `Arraylist`.
+
+- **`numberOfOcurrence(T element)`:** Retorna o número de ocorrências do elemento no `Arraylist`.
+
 ## Como Usar
 
 1. **Criação de um `ArrayList`**

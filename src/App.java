@@ -10,7 +10,8 @@ public class App {
         list.add(6,7);
 
         //list.showArray();
-        System.out.println (list.findLastOcurreence(4));
+        //System.out.println (list.findLastOcurreence(4));
+        System.out.println(list.numberOfOcurrence(4));
     } 
 }
 
