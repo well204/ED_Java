@@ -9,6 +9,15 @@ public class ArrayList<T> {
         this.size = 0;
     }
 
+    public int findLastOcurreence (T element) { // encontra a ultima ocorrencia de um elemento T
+        int index = -1;
+        for (int i = 0; i < this.size; i++) {
+            if (this.vector[i] == element)
+                index = i;
+        }
+        return index;
+    }
+    
     protected void ensureCapacity(int minCapacity) { // garantir capacidade do vetor, aumenta com um valor passado pelo teclado
         if (minCapacity <= 0) {
             return;
